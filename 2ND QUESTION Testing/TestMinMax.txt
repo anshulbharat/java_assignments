@@ -1,0 +1,30 @@
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class TestAssignmenttTest {
+         /* TestAssignmentt t1;
+           @BeforeEach
+            void init()
+             {
+          t1=new TestAssignmentt();
+             } */
+
+
+    @Test
+/* @RepeatedTest(20)*/
+
+    void testFindMin() {
+        TestAssignmentt m = new TestAssignmentt();
+        int[] array = {10, 2, 3, 10, 1, 0, 2, 3, 16, 0, 2};
+        assertEquals(0, m.findMin(array));
+
+    }
+
+void testFindMax() {
+        TestAssignmentt m1 = new TestAssignmentt();
+        int[] array = {10, 2, 3, 10, 1, 0, 2, 3, 16, 0, 2};
+        assertEquals(10, m1.findMax(array));
+
+    }
+}
